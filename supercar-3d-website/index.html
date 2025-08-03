@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperCars Elite - Luxury Supercars Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>SuperCars Elite</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="models.html" class="nav-link">Models</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Car -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Experience Automotive Excellence</h1>
+                <p>Discover the world's most exclusive supercars with immersive 3D technology</p>
+                <button class="cta-button">Explore Collection</button>
+            </div>
+        </div>
+        <div id="hero-3d-container" class="hero-3d"></div>
+        
+        <!-- 3D Controls UI -->
+        <div class="controls-ui">
+            <div class="control-panel">
+                <button id="rotate-btn" class="control-btn">Auto Rotate</button>
+                <div class="color-picker">
+                    <span>Color:</span>
+                    <div class="color-options">
+                        <div class="color-option" data-color="#ff0000" style="background: #ff0000;"></div>
+                        <div class="color-option" data-color="#000000" style="background: #000000;"></div>
+                        <div class="color-option" data-color="#ffffff" style="background: #ffffff;"></div>
+                        <div class="color-option" data-color="#0066cc" style="background: #0066cc;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose SuperCars Elite</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏎️</div>
+                    <h3>Premium Collection</h3>
+                    <p>Curated selection of the world's finest supercars</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Expert Service</h3>
+                    <p>Professional maintenance and customization services</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Exclusive Access</h3>
+                    <p>First access to limited edition and rare models</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Models -->
+    <section class="featured-models">
+        <div class="container">
+            <h2>Featured Models</h2>
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-3d" id="model-1"></div>
+                    <div class="model-info">
+                        <h3>Phantom GT-R</h3>
+                        <p>Starting at $299,000</p>
+                        <button class="view-model-btn">View in 3D</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-3d" id="model-2"></div>
+                    <div class="model-info">
+                        <h3>Velocity X1</h3>
+                        <p>Starting at $450,000</p>
+                        <button class="view-model-btn">View in 3D</button>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-3d" id="model-3"></div>
+                    <div class="model-info">
+                        <h3>Thunder Sport</h3>
+                        <p>Starting at $350,000</p>
+                        <button class="view-model-btn">View in 3D</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SuperCars Elite</h3>
+                    <p>Your gateway to automotive excellence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@supercarselite.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SuperCars Elite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
